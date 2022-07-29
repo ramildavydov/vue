@@ -1,0 +1,12 @@
+$fonts: ('Roboto', 'Thin', 100),
+        ('Roboto', 'Regular', 400),
+        ('Roboto', 'Medium', 500),
+        ('Roboto', 'Bold', 700);
+
+@each $name, $fullName, $weight in $fonts {
+  @font-face {
+    font-family: $name;
+    src: url(../fonts/#{$name}-#{$fullName}.ttf);
+    font-weight: $weight;
+  }
+}

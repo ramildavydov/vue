@@ -1,0 +1,26 @@
+.header {
+  box-shadow: 0 1px 5px gray;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    &-list {
+      @include center;
+      list-style: none;
+    }
+
+    &-link {
+      margin-left: 15px;
+
+      &.active {
+        font-weight: 500;
+      }
+    }
+  }
+  &__logo {
+    &-img {
+      width: 150px;
+    }
+  }
+}

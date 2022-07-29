@@ -1,0 +1,50 @@
+@import './common/root.scss';
+@import './common/font.scss';
+@import './common/header.scss';
+@import './common/footer.scss';
+
+.pages {
+  height: 80vh;
+  position: relative;
+}
+
+.pages::before {
+  content: 'Cайт в процессе разработки';
+  padding: 10px 20px;
+  background: red;
+  position: absolute;
+  top: 150px;
+  left: -110px;
+  z-index: 5;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+  transform: rotate(90deg);
+}
+
+.home__page {
+  position: relative;
+
+  &-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-title {
+    font-size: 60px;
+    max-width: 600px;
+  }
+}
